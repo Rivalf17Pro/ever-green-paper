@@ -64,3 +64,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Project description 
+
+In this project a web application will be developed for the sale of recycled paper, all this in order that anyone who wants to support the environment can buy fully recycled paper or donate paper for recycling, likewise the materials will be sold so that people can recycle their own paper at home. 
