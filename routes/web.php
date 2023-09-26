@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 /*
@@ -13,4 +14,4 @@ use App\Http\Controllers\LandingController;
 |
 */
 
-Route::get('/', LandingController::class);
+Route::get('/', [WelcomeController::class, 'index'])->name('welcome');

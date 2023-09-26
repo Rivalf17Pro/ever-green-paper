@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import './fontawesome-free-6.4.2-web/css/all.min.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    .button-inline{
+        @apply text-gray-800 text-sm font-semibold hover:text-green-500 mr-4 py-1 px-4 rounded-lg dark:text-gray-400;
+    }
+    .button{
+        @apply text-gray-800 text-sm font-semibold hover:text-green-500 mr-4 bg-gray-100/80 py-1 px-4 rounded-lg dark:bg-gray-800/80 dark:text-gray-400;
+    }
+    .button-online{
+        @apply text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-green-500 hover:border-green-700 dark:border-gray-800 dark:text-gray-400;
+    }
+    .button-success{
+        @apply bg-green-700 font-semibold text-white hover:bg-green-600 hover:text-white;
+    }
+    .nav-md{
+        @apply hidden md:hidden md:top-full py-4 overflow-y-auto;
+    }
+    .nav-active{
+        @apply md:hidden flex flex-col top-0;
+    }
+}
