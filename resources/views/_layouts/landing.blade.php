@@ -12,7 +12,7 @@
     @yield('styles')
     <!-- End Styles -->
 </head>
-<body class="bg-gray-50 dark:bg-gray-900/95">
+<body class="bg-img-app bg-gray-50/70 dark:bg-gray-900/95 dark:bg-img-app-dark">
     <!-- Content -->
     @include('_layouts._partials.landing.nav')
     <main class="container mx-auto py-20 px-5">
