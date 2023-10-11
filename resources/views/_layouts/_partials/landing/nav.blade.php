@@ -11,7 +11,7 @@
 
                 <div class="hidden md:flex sm:items-center">
                     <a href="#" class="button-inline">Acerca de </a>
-                    <a href="#" class="button-inline">Contato</a>
+                    <a href="{{ route('contact') }}" class="button-inline">Contato</a>
                     <a href="#" class="button-inline">Donaciones</a>
                 </div>
 

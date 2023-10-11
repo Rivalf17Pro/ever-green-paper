@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="{{ asset('favicon.svg') }}" type="image/svg">
+    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/svg">
     <title>@yield('title') | EverGreen Paper</title>
 
     <!-- Styles -->
@@ -15,7 +15,7 @@
 <body class="bg-img-app bg-gray-50/70 dark:bg-gray-900/95 dark:bg-img-app-dark">
     <!-- Content -->
     @include('_layouts._partials.landing.nav')
-    <main class="container mx-auto py-20 px-5">
+    <main class="mx-auto w-full max-w-screen-xl px-2 py-24">
         @yield('content')
     </main>
     @include('_layouts._partials.landing.footer')
