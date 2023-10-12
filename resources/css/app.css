@@ -7,13 +7,13 @@
 
 @layer base{
     .button-inline{
-        @apply text-gray-800 text-sm font-semibold hover:text-green-500 mr-4 py-1 px-4 rounded-lg dark:text-gray-400;
+        @apply text-gray-800 text-sm font-semibold hover:text-green-500 mr-4 py-1 px-4 rounded-lg dark:text-gray-300;
     }
     .button{
-        @apply text-gray-800 text-sm font-semibold hover:text-green-500 mr-4 bg-gray-100/80 py-1 px-4 rounded-lg dark:bg-gray-800/80 dark:text-gray-400;
+        @apply text-gray-800 text-sm font-semibold hover:text-green-500 mr-4 bg-gray-100/80 py-1 px-4 rounded-lg dark:bg-gray-800/80 dark:text-gray-300;
     }
     .button-online{
-        @apply text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-green-500 hover:border-green-700 dark:border-gray-800 dark:text-gray-400;
+        @apply text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-green-500 hover:border-green-700 dark:border-gray-800 dark:text-gray-300;
     }
     .button-success{
         @apply bg-green-700 font-semibold text-white hover:bg-green-600 hover:text-white;

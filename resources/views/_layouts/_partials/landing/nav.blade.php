@@ -1,6 +1,6 @@
 <!-- component -->
 <header class="fixed z-30 bg-gray-100 font-sans w-full mt-0">
-    <nav class="bg-white shadow-md dark:bg-gray-900 dark:shadow-gray-700">
+    <nav class="bg-white shadow-md dark:bg-gray-900 dark:shadow-green-700/60">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between py-4">
                 <div>
