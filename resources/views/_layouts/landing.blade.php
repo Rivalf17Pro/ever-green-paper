@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/svg">
     <title>@yield('title') | EverGreen Paper</title>
-
+    <link rel="stylesheet" href="{{ asset('build/assets/app-e53ba5d8.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fontawesome-free-6.4.2-web/css/all.min.css') }}">
     <!-- Styles -->
-    @vite(['resources/css/app.css'])
+    {{-- @vite(['resources/css/app.css']) --}}
     @yield('styles')
     <!-- End Styles -->
 </head>
@@ -22,7 +23,8 @@
     <!-- End Content -->
 
     <!-- Scripts -->
-    @vite(['resources/js/app.js'])
+    {{-- @vite(['resources/js/app.js']) --}}
+    <script src="{{ asset('build/assets/app-3d518e32.js') }}"></script>
     @yield('scripts')
     <!-- End Scripts -->
 </body>

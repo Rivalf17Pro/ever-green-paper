@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\WelcomeController;
+
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LandingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
