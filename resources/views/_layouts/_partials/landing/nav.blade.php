@@ -10,9 +10,15 @@
                 </div>
 
                 <div class="hidden md:flex sm:items-center">
-                    <a href="#" class="button-inline">Acerca de </a>
-                    <a href="{{ route('contact') }}" class="button-inline">Contato</a>
-                    <a href="#" class="button-inline">Donaciones</a>
+                    @section('about-nav')
+                        <a href="#" class="button-inline">Acerca de </a>
+                    @show
+                    @section('contact-nav')
+                        <a href="{{ route('contact') }}" class="button-inline">Contato</a>
+                    @show
+                    @section('donations-nav')
+                        <a href="#" class="button-inline">Donaciones</a>
+                    @show
                 </div>
 
                 <div class="hidden md:flex sm:items-center">
@@ -40,4 +46,3 @@
         </div>
     </nav>
 </header>
-
