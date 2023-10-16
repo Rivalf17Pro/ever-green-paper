@@ -19,9 +19,7 @@
         </div>
     </div>
     <div class="flex flex-col gap-5 md:grid md:grid-cols-3 justify-items-center items-center justify-center content-center mt-8">
-        <x-card>
-            <x-slot name="title">Productos</x-slot>
-            <x-slot name="pre">Hola</x-slot>
-        </x-card>
+        <x-card title="Productos" pre="Gran diversidad de artículos completamente reciclados" img="{{ asset('assets/images/landing-images-frame/frame-4.svg') }}" alt="Frame 4" button="Leér más" url="#" icon="fa-solid fa-arrow-right"></x-card>
+        <x-card title="Herramientas" pre="Descubre cómo reciclar tu papel utilizando las herramientas que brindamos" img="{{ asset('assets/images/landing-images-frame/frame-5.svg') }}" alt="Frame 5" button="Leer más" url="#" icon="fa-solid fa-arrow-right" date="14/05/2022"></x-card>
     </div>
 @endsection

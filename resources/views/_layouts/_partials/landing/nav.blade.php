@@ -33,9 +33,15 @@
             <div class="nav-md" id="navbarSupportedContent">
                 <div class="block border-2 rounded-lg dark:border-gray-800">
                     <div class="flex flex-col">
-                        <a href="#" class="button-inline">Acerca de </a>
+                        @section('about-nav')
+                            <a href="#" class="button-inline">Acerca de </a>
+                        @show
+                        @section('contact-nav')
                         <a href="#" class="button-inline">Contato</a>
-                        <a href="#" class="button-inline">Donaciones</a>
+                        @show
+                        @section('donations-nav')
+                            <a href="#" class="button-inline">Donaciones</a>
+                        @show
                     </div>
                 </div>
                 <div class="flex justify-between items-center pt-2">
