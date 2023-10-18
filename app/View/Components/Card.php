@@ -13,7 +13,7 @@ class Card extends Component
      */
 
     public $title;
-    public $pre;
+    public $description;
     public $content;
     public $img;
     public $alt;
@@ -23,10 +23,10 @@ class Card extends Component
     public $date;
 
 
-    public function __construct($title, $pre, $content = null, $img = null, $alt = null, $button = null, $icon = null, $url = null, $date = null)
+    public function __construct($title, $description, $content = null, $img = null, $alt = null, $button = null, $icon = null, $url = null, $date = null)
     {
         $this->title = $title;
-        $this->pre = $pre;
+        $this->description = $description;
         $this->content = $content;
         $this->img = $img;
         $this->alt = $alt;
@@ -37,7 +37,7 @@ class Card extends Component
     }
 
     /**
-     * Get the view / contents that represent the component.
+     * Get the view / contents that redescriptionsent the component.
      */
     public function render(): View|Closure
     {

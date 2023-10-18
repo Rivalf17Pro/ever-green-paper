@@ -1,5 +1,7 @@
 @extends('_layouts.landing')
+
 @section('title', 'Bienvenid@')
+
 @section('content')
     <div class="grid md:grid-cols-2 items-center">
         <div
@@ -18,8 +20,18 @@
             <img src="{{ asset('assets/images/landing-images-frame/frame-3.svg') }}" alt="Frame 3" class="w-full md:w-auto">
         </div>
     </div>
-    <div class="flex flex-col gap-5 md:grid md:grid-cols-3 justify-items-center items-center justify-center content-center mt-8">
+    <div
+        class="flex flex-col gap-5 md:grid md:grid-cols-3 justify-items-center items-center justify-center content-center mt-8">
+        @if (!empty($posts))
+            @foreach ($posts as $post)
+                <x-card title="{{ $post->title }}" description="{{ $post->description }}" img="{{ $post->image }}"
+                    alt="{{ Str::upper($post->title) }}" button="Leer más" url="{{ route('welcome.show', $post->id) }}"
+                    icon="fa-solid fa-arrow-right" date="{{ $post->created_at }}" />
+            @endforeach
+        @endif
+        {{-- 
         <x-card title="Productos" pre="Gran diversidad de artículos completamente reciclados" img="{{ asset('assets/images/landing-images-frame/frame-4.svg') }}" alt="Frame 4" button="Leér más" url="#" icon="fa-solid fa-arrow-right"></x-card>
         <x-card title="Herramientas" pre="Descubre cómo reciclar tu papel utilizando las herramientas que brindamos" img="{{ asset('assets/images/landing-images-frame/frame-5.svg') }}" alt="Frame 5" button="Leer más" url="#" icon="fa-solid fa-arrow-right" date="14/05/2022"></x-card>
+        --}}
     </div>
 @endsection

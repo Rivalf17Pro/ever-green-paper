@@ -4,7 +4,7 @@
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between py-4">
                 <div>
-                    <a href="{{ route('welcome') }}"><img class="w-40"
+                    <a href="{{ route('welcome.index') }}"><img class="w-40"
                             src="{{ asset('assets/images/logo/EverGreenPaperLogo.svg') }}"
                             alt="Logo Ever Green Paper"></a>
                 </div>
@@ -14,7 +14,7 @@
                         <a href="#" class="button-inline">Acerca de </a>
                     @show
                     @section('contact-nav')
-                        <a href="{{ route('contact') }}" class="button-inline">Contato</a>
+                        <a href="{{ route('contact.index') }}" class="button-inline">Contato</a>
                     @show
                     @section('donations-nav')
                         <a href="#" class="button-inline">Donaciones</a>
@@ -37,7 +37,7 @@
                             <a href="#" class="button-inline">Acerca de </a>
                         @show
                         @section('contact-nav')
-                        <a href="#" class="button-inline">Contato</a>
+                        <a href="{{ route('contact.index') }}" class="button-inline">Contato</a>
                         @show
                         @section('donations-nav')
                             <a href="#" class="button-inline">Donaciones</a>

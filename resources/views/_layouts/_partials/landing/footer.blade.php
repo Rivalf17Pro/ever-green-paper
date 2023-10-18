@@ -11,10 +11,10 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 dark:text-gray-400 uppercase">Politicas</h2>
                     <ul class="text-gray-500 dark:text-gray-500">
                         <li class="mb-4">
-                            <a href="https://flowbite.com/" class="hover:underline hover:text-green-600">Politicas de privacidad</a>
+                            <a href="#" class="hover:underline hover:text-green-600">Politicas de privacidad</a>
                         </li>
                         <li>
-                            <a href="https://tailwindcss.com/" class="hover:underline hover:text-green-600">Politicas de uso</a>
+                            <a href="#" class="hover:underline hover:text-green-600">Politicas de uso</a>
                         </li>
                     </ul>
                 </div>
@@ -23,11 +23,11 @@
                         reembolso</h2>
                     <ul class="text-gray-500 dark:text-gray-500">
                         <li class="mb-4">
-                            <a href="https://github.com/themesberg/flowbite" class="hover:underline hover:text-green-600 ">Terminos de
+                            <a href="#" class="hover:underline hover:text-green-600 ">Terminos de
                                 servicio</a>
                         </li>
                         <li>
-                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline hover:text-green-600">Atención a cliente</a>
+                            <a href="#" class="hover:underline hover:text-green-600">Atención a cliente</a>
                         </li>
                     </ul>
                 </div>
@@ -35,7 +35,7 @@
         </div>
         <hr class="my-6 border-gray-400 sm:mx-auto lg:my-8 dark:border-gray-500" />
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="{{ route('welcome') }}" class="hover:underline hover:text-green-600">Ever Green Paper™</a>. All Rights Reserved.
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="{{ route('welcome.index') }}" class="hover:underline hover:text-green-600">Ever Green Paper™</a>. All Rights Reserved.
             </span>
             <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                 <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-green-600">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use App\Models\Post;
 
 class WelcomeController extends Controller
 {
@@ -12,7 +13,8 @@ class WelcomeController extends Controller
      */
     public function index(): View
     {
-        return view('welcome.index');
+        $posts = Post::all()->where('public', 1);
+        return view('welcome.index', compact('posts'));
     }
 
     /**
@@ -20,7 +22,6 @@ class WelcomeController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
@@ -34,9 +35,10 @@ class WelcomeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Post $post): View
     {
         //
+        return view('welcome.show', compact('post'));
     }
 
     /**

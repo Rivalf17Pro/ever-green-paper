@@ -3,7 +3,7 @@
 @section('title', 'Contacto')
 
 @section('contact-nav')
-    <a href="{{ route('contact') }}" class="button-inline text-green-600">Contacto</a>
+    <a href="{{ route('contact.index') }}" class="button-inline text-green-600">Contacto</a>
 @endsection
 
 @section('content')
